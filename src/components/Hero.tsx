@@ -2,18 +2,18 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Code, Layers, Zap } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
 
-  const words = [
+  const words = useMemo(() => [
     "Modern Websites That Perform",
     "Digital Experiences That Scale",
     "High-Performance Web Systems",
     "Engineering Premium Interfaces",
-  ];
+  ], []);
 
   const [text, setText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
@@ -139,13 +139,16 @@ export default function Hero() {
 
     window.addEventListener("mousemove", handleMouseMove);
 
+    let animationId: number;
+    
     function animate() {
+      if (!canvas || !ctx) return;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       particles.forEach((p) => {
         p.update();
         p.draw(ctx);
       });
-      requestAnimationFrame(animate);
+      animationId = requestAnimationFrame(animate);
     }
 
     animate();
@@ -153,6 +156,7 @@ export default function Hero() {
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("resize", resize);
+      cancelAnimationFrame(animationId);
     };
   }, []);
 
