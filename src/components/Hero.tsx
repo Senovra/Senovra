@@ -45,7 +45,7 @@ export default function Hero() {
     }, deleting ? 40 : 70);
 
     return () => clearTimeout(timeout);
-  }, [charIndex, deleting, wordIndex]);
+  }, [charIndex, deleting, wordIndex, words]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -68,17 +68,20 @@ export default function Hero() {
     let mouseX = 0;
     let mouseY = 0;
 
-    class Particle {
-      x: number;
+    class Particle {\n      x: number;
       y: number;
       size: number;
       speedX: number;
       speedY: number;
       opacity: number;
+      canvasWidth: number;
+      canvasHeight: number;
 
-      constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
+      constructor(canvasWidth: number, canvasHeight: number) {
+        this.canvasWidth = canvasWidth;
+        this.canvasHeight = canvasHeight;
+        this.x = Math.random() * canvasWidth;
+        this.y = Math.random() * canvasHeight;
         this.size = Math.random() * 1.5 + 0.5;
         this.speedX = Math.random() * 0.2 - 0.1;
         this.speedY = Math.random() * 0.2 - 0.1;
@@ -121,7 +124,7 @@ export default function Hero() {
     }
 
     for (let i = 0; i < particleCount; i++) {
-      particles.push(new Particle());
+      particles.push(new Particle(canvas.width, canvas.height));
     }
 
     const handleMouseMove = (e: MouseEvent) => {
