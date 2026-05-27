@@ -8,8 +8,6 @@ export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
 
-  
-
   const words = [
     "Modern Websites That Perform",
     "Digital Experiences That Scale",
@@ -68,7 +66,8 @@ export default function Hero() {
     let mouseX = 0;
     let mouseY = 0;
 
-    class Particle {\n      x: number;
+    class Particle {
+      x: number;
       y: number;
       size: number;
       speedX: number;
