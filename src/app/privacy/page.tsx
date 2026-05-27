@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
             </h1>
 
             <p className="text-[#a1a1aa] max-w-2xl mx-auto font-light leading-relaxed">
-              Your privacy matters to us. <br /> Here's how we collect, use and protect your information with complete transparency.
+              Your privacy matters to us. <br /> Here&apos;s how we collect, use and protect your information with complete transparency.
             </p>
 
             <p className="text-sm text-[#71717a] mt-6">

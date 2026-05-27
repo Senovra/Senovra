@@ -160,7 +160,7 @@ export default function PortfolioPage() {
                       alt={project.title}
                       className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 bg-black/20"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#070B14]/80 via-transparent to-transparent" /><div className="absolute inset-0 bg-gradient-to-t from-[#070B14] via-[#070B14]/60 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#070B14]/80 via-transparent to-transparent" />
 
                     {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#7dd3fc]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -244,7 +244,7 @@ export default function PortfolioPage() {
                 </h2>
 
                 <p className="text-base md:text-lg text-[#a1a1aa] mb-8 max-w-2xl mx-auto font-light leading-relaxed">
-                  Let's discuss your project and create a high-performance digital experience.
+                  Let&apos;s discuss your project and create a high-performance digital experience.
                 </p>
 
                 <a

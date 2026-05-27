@@ -23,7 +23,7 @@ export default function ContactSection() {
           <span className="gradient-text">Extraordinary?</span>
         </h2>
         <p className="text-base md:text-lg text-gray-400 mb-10 leading-relaxed max-w-2xl mx-auto">
-          Let's discuss your project and bring your vision to life with premium digital solutions.
+          Let&apos;s discuss your project and bring your vision to life with premium digital solutions.
         </p>
         <a
           href="/contact"

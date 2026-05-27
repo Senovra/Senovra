@@ -71,7 +71,7 @@ export default function NotFound() {
               transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
               className="text-[#a1a1aa] font-light leading-relaxed mb-12 max-w-md mx-auto"
             >
-              The page you're looking for doesn't exist or may have been moved.
+              The page you&apos;re looking for doesn&apos;t exist or may have been moved.
               Check the URL or return to a known page.
             </motion.p>
 

@@ -47,7 +47,7 @@ export default function FeaturedWork() {
               <span className="gradient-text font-medium">Work</span>
             </h2>
             <p className="text-base md:text-lg text-[#a1a1aa] font-light">
-              Recent projects we've delivered
+              Recent projects we&apos;ve delivered
             </p>
           </div>
 

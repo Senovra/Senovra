@@ -91,7 +91,7 @@ export default function MaintenancePage() {
   <p
     className="text-[#a1a1aa] text-base md:text-lg font-light leading-relaxed"
   >
-    We're currently making improvements to refine the Senovra experience.
+    We&apos;re currently making improvements to refine the Senovra experience.
     <br />
     The website will be back online shortly. 
     <br/>
