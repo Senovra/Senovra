@@ -4,18 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import { motion } from "framer-motion";
-import {
-  Code,
-  Palette,
-  Sparkles,
-  Zap,
-  Globe,
-  Smartphone,
-  ArrowUpRight,
-  Shield,
-  Cpu,
-  Layers3,
-} from "lucide-react";
+import {Code, Palette, Sparkles, Zap, Globe, Smartphone, Shield, Cpu, Layers3} from "lucide-react";
 
 export default function ServicesPage() {
   const services = [
@@ -108,12 +97,12 @@ export default function ServicesPage() {
     {
       icon: <Shield className="w-5 h-5" />,
       title: "Reliable Systems",
-      text: "Stable, secure, and engineered for long-term growth.",
+      text: "Stable, secure and engineered for long-term growth.",
     },
     {
       icon: <Layers3 className="w-5 h-5" />,
       title: "Modern Stack",
-      text: "Next.js, React, TypeScript, and premium UI systems.",
+      text: "Next.js, React, TypeScript and premium UI systems.",
     },
   ];
 
@@ -171,7 +160,7 @@ export default function ServicesPage() {
 
     {/* Text */}
     <span className="relative z-10 text-[10px] font-semibold tracking-[0.28em] uppercase font-display bg-gradient-to-r from-[#7dd3fc] to-[#a78bfa] bg-clip-text text-transparent transition-all duration-300">
-      SENOVRA SERVICES
+      OUR SERVICES
     </span>
   </motion.div>
 </div>
@@ -333,7 +322,7 @@ export default function ServicesPage() {
                   step: "01",
                   title: "Discovery",
                   description:
-                    "Understanding your vision, goals, and audience",
+                    "Understanding your vision, goals and audience",
                 },
                 {
                   step: "02",

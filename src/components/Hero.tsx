@@ -218,13 +218,13 @@ export default function Hero() {
 
         {/* SUBTITLE */}
         <p className="text-sm sm:text-base md:text-lg text-[#a1a1aa] mb-8 sm:mb-10 max-w-xl mx-auto px-2">
-          We engineer high-performance web solutions for ambitious businesses that demand speed, precision, and scale.
+          We engineer high-performance web solutions for ambitious businesses that demand speed, precision and scale.
         </p>
 
         {/* ICON STRIP (RESTORED LABELS) */}
         <div className="flex justify-center gap-5 sm:gap-8 mb-10 text-white/50">
           {[
-            { icon: Code, text: "Engineering" },
+            { icon: Code, text: "Development" },
             { icon: Layers, text: "Scalable" },
             { icon: Zap, text: "Performance" },
           ].map((item, i) => (

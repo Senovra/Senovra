@@ -6,28 +6,27 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 export default function FeaturedWork() {
   const projects = [
     {
-      title: "Northfield Capital",
-      category: "Investment Platform",
+      title: "GIH",
+      category: "Luxury Hospitality Platform",
       description:
-        "Real-time investment platform with advanced data visualization and portfolio management.",
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+        "A luxury hospitality platform concept designed to showcase resort listings and investment opportunities through a clean, modern interface.",
+      image: "/GIH.png",
     },
     {
-      title: "Arcadia Hotels",
-      category: "Hospitality Platform",
+      title: "EatSafe",
+      category: "Diet Recommendation Platform",
       description:
-        "Modern booking platform with integrated property management and guest services.",
+        "An AI-powered web application that provides personalized diet recommendations based on health metrics and user preferences.",
       image:
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+        "/EatSafe.png",
     },
     {
-      title: "Meridian Health",
-      category: "Healthcare Portal",
+      title: "Salon Zen",
+      category: "Salon Management & Booking Platform",
       description:
-        "Secure patient portal with appointment scheduling and medical record access.",
+        "A comprehensive platform for managing salon operations and client bookings.",
       image:
-        "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+        "/SalonZen.png",
     },
   ];
 

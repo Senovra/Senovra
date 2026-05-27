@@ -71,14 +71,14 @@ export default function AboutPage() {
       icon: Award,
       title: "Relentless Excellence",
       description:
-        "We refine until nothing feels unnecessary — only clarity, balance, and intent remain.",
+        "We refine until nothing feels unnecessary — only clarity, balance and intent remain.",
     },
   ];
 
   const stats = [
-    { value: 50, suffix: "+", label: "Projects Delivered" },
-    { value: 30, suffix: "+", label: "Global Clients" },
-    { value: 5, suffix: "+", label: "Years of Craft" },
+    { value: 20, suffix: "+", label: "Projects Delivered" },
+    { value: 15, suffix: "+", label: "Global Clients" },
+    { value: 6, suffix: "+", label: "Years of Craft" },
     { value: 100, suffix: "%", label: "Client Satisfaction" },
   ];
 
@@ -115,12 +115,12 @@ export default function AboutPage() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.03] border border-white/10 backdrop-blur-xl mb-6">
               <div className="w-1.5 h-1.5 bg-[#7dd3fc] rounded-full animate-pulse" />
-              <span className="text-[10px] tracking-[0.28em] uppercase font-medium text-[#a1a1aa]">
+              <span className="relative z-10 text-[10px] font-semibold tracking-[0.28em] uppercase font-display bg-gradient-to-r from-[#7dd3fc] to-[#a78bfa] bg-clip-text text-transparent transition-all duration-300">
                 ABOUT SENOVRA
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-medium mb-6 leading-[1.05] tracking-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-6xl font-normal mb-4 md:mb-6 leading-[1.05] tracking-tight" text-center>
               <span className="text-white">
                 Engineering Digital Systems That Scale With{" "}
               </span>
@@ -131,7 +131,7 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-[#a1a1aa] max-w-2xl mx-auto">
-              We build high-performance websites for ambitious businesses that demand speed, precision, and scalability.
+              We build high-performance websites for ambitious businesses that demand speed, precision and scalability.
             </p>
           </motion.div>
         </section>
@@ -150,7 +150,7 @@ export default function AboutPage() {
               },
               {
                 title: "Execution",
-                text: "Every build is optimized for speed, scale, and long-term evolution.",
+                text: "Every build is optimized for speed, scale and long-term evolution.",
               },
             ].map((item, i) => (
               <motion.div
@@ -241,7 +241,7 @@ export default function AboutPage() {
       </h2>
 
       <p className="text-base md:text-lg text-[#a1a1aa] max-w-2xl mx-auto font-light leading-relaxed">
-        A small set of values that define how we think, design, and build.
+        A small set of values that define how we think, design and build.
       </p>
     </motion.div>
 

@@ -9,55 +9,55 @@ import { Sparkles, ArrowUpRight, ExternalLink } from "lucide-react";
 export default function PortfolioPage() {
   const projects = [
     {
-      title: "Northfield Capital",
-      category: "Investment Platform",
+      title: "GIH",
+      category: "Luxury Hospitality Platform",
       description:
-        "Real-time investment platform with advanced data visualization and portfolio management.",
-      tags: ["Next.js", "TypeScript", "Real-time Data"],
-      year: "2024",
+        "A luxury hospitality platform concept designed to showcase resort listings and investment opportunities through a clean, modern interface.",
+      tags: ["Next.js", "TypeScript", "Node.js", "React.js"],
+      year: "2026",
       image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80",
+        "/GIH.png",
       featured: true,
     },
     {
-      title: "Arcadia Hotels",
-      category: "Hospitality Platform",
+      title: "EatSafe",
+      category: "Diet Recommendation Platform",
       description:
-        "Modern booking platform with integrated property management system.",
-      tags: ["React", "Node.js", "API Integration"],
+        "An AI-powered web application that provides personalized diet recommendations.",
+      tags: ["Python", "PostgreSQL", "NeuralFM"],
+      year: "2023",
+      image:
+        "/EatSafe.png",
+    },
+    {
+      title: "Salon Zen",
+      category: "Salon Management & Booking Platform",
+      description:
+        "A comprehensive platform for managing salon operations and client bookings.",
+      tags: ["Laravel", "SQLite"],
+      year: "2022",
+      image:
+        "/SalonZen.png",
+    },
+    {
+      title: "SafeSure",
+      category: "Vehicle Insurance Mobile Application",
+      description:
+        "A mobile application designed to simplify motor vehicle insurance management for users.",
+      tags: ["Java", "Flutter", "Firebase"],
       year: "2024",
       image:
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+        "/SafeSure.png",
     },
     {
-      title: "Meridian Health",
-      category: "Healthcare Portal",
+      title: "DutyFree",
+      category: "Professional POS System",
       description:
-        "Patient portal with appointment scheduling and secure messaging.",
-      tags: ["Next.js", "PostgreSQL", "HIPAA"],
+        "A professional POS system designed to streamline retail operations and enhance customer experience.",
+      tags: ["Node.js", "React.js", "Supabase"],
       year: "2023",
       image:
-        "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
-    },
-    {
-      title: "Velocity Commerce",
-      category: "E-Commerce Platform",
-      description:
-        "High-conversion online store with advanced product filtering.",
-      tags: ["Shopify", "Performance", "UX"],
-      year: "2023",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-    },
-    {
-      title: "Summit Financial",
-      category: "Financial Services",
-      description:
-        "Corporate website with secure client portal and document management.",
-      tags: ["Next.js", "Security", "Authentication"],
-      year: "2023",
-      image:
-        "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80",
+        "/DutyFree.jpeg",
     },
   ];
 
@@ -96,7 +96,7 @@ export default function PortfolioPage() {
 
     {/* Text */}
     <span className="relative z-10 text-[10px] font-semibold tracking-[0.28em] uppercase font-display bg-gradient-to-r from-[#7dd3fc] to-[#a78bfa] bg-clip-text text-transparent transition-all duration-300">
-      PORTFOLIO
+      OUR PORTFOLIO
     </span>
   </motion.div>
 </div>
@@ -116,7 +116,7 @@ export default function PortfolioPage() {
                 strokeWidth={1}
               />
 
-              <h2 className="font-light text-white mb-3 text-[clamp(22px,2.5vw,34px)] leading-tight">
+              <h2 className="font-medium text-white mb-3 text-[clamp(22px,2.5vw,34px)] leading-tight">
                 The{" "}
                 <span className="gradient-text font-medium">
                   Senovra Collection
@@ -158,9 +158,9 @@ export default function PortfolioPage() {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 bg-black/20"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#070B14] via-[#070B14]/60 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#070B14]/80 via-transparent to-transparent" /><div className="absolute inset-0 bg-gradient-to-t from-[#070B14] via-[#070B14]/60 to-transparent" />
 
                     {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-[#7dd3fc]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

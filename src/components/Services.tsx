@@ -9,7 +9,7 @@ export default function Services() {
       icon: <Code2 className="w-5 h-5" />,
       title: "Website Development",
       description:
-        "Custom-built websites with modern frameworks. Fast, scalable, and optimized for performance.",
+        "Custom-built websites with modern frameworks. Fast, scalable and optimized for performance.",
     },
     {
       icon: <Palette className="w-5 h-5" />,
@@ -27,7 +27,7 @@ export default function Services() {
       icon: <Globe className="w-5 h-5" />,
       title: "Website Maintenance",
       description:
-        "Ongoing support and updates to keep your website secure, fast, and up-to-date.",
+        "Ongoing support and updates to keep your website secure, fast and up-to-date.",
     },
   ];
 

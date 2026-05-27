@@ -118,7 +118,7 @@ ${message}
 
             <p className="text-lg text-[#a1a1aa] max-w-2xl font-light leading-relaxed">
               Share your vision with us. We’ll respond within 24 hours with clarity,
-              direction, and next steps.
+              direction and next steps.
             </p>
           </motion.div>
         </section>

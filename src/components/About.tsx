@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 export default function About() {
   const stats = [
-    { number: 50, label: "Projects Delivered" },
-    { number: 99, label: "Client Satisfaction" },
-    { number: 24, label: "24h Response Time" },
-    { number: 5, label: "Years Experience" },
+    { number: 20, label: "Projects Delivered", suffix: "+" },
+    { number: 100, label: "Client Satisfaction", suffix: "%" },
+    { number: 24, label: "24h Response Time", suffix: "h" },
+    { number: 6, label: "Years Experience", suffix: "+" },
   ];
 
   const principles = [
@@ -50,7 +50,7 @@ export default function About() {
             <span className="gradient-text font-medium">Scale</span>
           </h2>
           <p className="text-base md:text-lg text-[#a1a1aa] max-w-2xl mx-auto font-light leading-relaxed px-4">
-            We engineer modern websites for performance, scalability, and longevity.
+            We engineer modern websites for performance, scalability and longevity.
           </p>
         </motion.div>
 
@@ -69,12 +69,17 @@ export default function About() {
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                transition={{
+                  delay: i * 0.1,
+                  duration: 0.8,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
                 viewport={{ once: true }}
                 className="border-l border-white/10 pl-4 md:pl-6"
               >
                 <div className="text-2xl md:text-3xl gradient-text font-light">
-                  {s.number}+
+                  {s.number}
+                  {s.suffix || ""}
                 </div>
                 <div className="text-xs md:text-sm text-[#a1a1aa] font-light mt-1">
                   {s.label}
@@ -96,7 +101,11 @@ export default function About() {
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                transition={{
+                  delay: i * 0.1,
+                  duration: 0.8,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
                 viewport={{ once: true }}
                 className="p-5 md:p-6 border border-white/5 rounded-xl bg-white/[0.01] hover:bg-white/[0.02] hover:border-white/10 transition-all duration-500 cursor-pointer group"
               >

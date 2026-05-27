@@ -1,9 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin } from "lucide-react";
 
 export default function Footer() {
   const footerLinks = {
@@ -42,7 +41,8 @@ export default function Footer() {
     <footer className="border-t border-white/5 py-12 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-10 mb-12">
-          {/* Brand Column */}
+
+          {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2.5 mb-4">
               <div className="relative w-8 h-8">
@@ -64,11 +64,11 @@ export default function Footer() {
             </p>
 
             <p className="text-gray-500 text-xs">
-              Premium digital experiences that elevate brands.
+              We build fast, scalable and modern websites for ambitious companies.
             </p>
           </div>
 
-          {/* Company Links */}
+          {/* Company */}
           <div>
             <h3 className="font-display font-bold mb-3 text-sm">
               Company
@@ -88,7 +88,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services Links */}
+          {/* Services */}
           <div>
             <h3 className="font-display font-bold mb-3 text-sm">
               Services
@@ -108,7 +108,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Links */}
+          {/* Contact */}
           <div>
             <h3 className="font-display font-bold mb-3 text-sm">
               Contact
@@ -134,30 +134,49 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+
+            {/* ICON-ONLY LINKEDIN BUTTON */}
+            <div className="mt-5">
+              <a
+                href="https://www.linkedin.com/company/senovra/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full
+                           bg-white/5 border border-white/10 backdrop-blur-md
+                           text-gray-400 hover:text-[#7dd3fc]
+                           hover:bg-white/10 hover:border-white/20
+                           transition-all duration-300"
+              >
+                <Linkedin className="w-4 h-4" />
+              </a>
+            </div>
           </div>
+
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-3">
+
           <p className="text-gray-500 text-xs">
             © {new Date().getFullYear()} Senovra. All rights reserved.
           </p>
 
           <div className="flex gap-6">
             <Link
-              href="#"
+              href="/privacy"
               className="text-gray-500 hover:text-[#7dd3fc] transition-colors text-xs"
             >
               Privacy Policy
             </Link>
 
             <Link
-              href="#"
+              href="/terms"
               className="text-gray-500 hover:text-[#7dd3fc] transition-colors text-xs"
             >
               Terms of Service
             </Link>
           </div>
+
         </div>
       </div>
     </footer>
