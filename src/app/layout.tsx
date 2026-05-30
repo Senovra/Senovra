@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "High-performance web development and maintenance for ambitious businesses. Fast, scalable, modern websites engineered for results.",
   icons: {
-    icon: "/logo.png",
+    icon: "/logo3.png",
   },
 };
 
