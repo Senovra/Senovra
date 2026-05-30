@@ -158,7 +158,7 @@ export default function Footer() {
         <div className="pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-3">
 
           <p className="text-gray-500 text-xs">
-            © {new Date().getFullYear()} Senovra. All rights reserved.
+           Copyright © {new Date().getFullYear()} Senovra. All rights reserved.
           </p>
 
           <div className="flex gap-6">
