@@ -277,7 +277,7 @@ export default function PortfolioClient() {
                 className="mt-8 pt-6 border-t border-white/[0.06]"
               >
                 <div className="flex items-center justify-center divide-x divide-white/[0.06]">
-                  <CollectionStat value="5" label="Deliveries" />
+                  <CollectionStat value="100%" label="Client Satisfaction" />
                   <CollectionStat value="4+" label="Industries" />
                   <CollectionStat value="2022 – 2026" label="Timeline" />
                 </div>
