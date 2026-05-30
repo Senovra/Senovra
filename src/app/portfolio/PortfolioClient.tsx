@@ -279,7 +279,7 @@ export default function PortfolioClient() {
                 <div className="flex items-center justify-center divide-x divide-white/[0.06]">
                   <CollectionStat value="100%" label="Client Satisfaction" />
                   <CollectionStat value="4+" label="Industries" />
-                  <CollectionStat value="2022 – 2026" label="Timeline" />
+                  <CollectionStat value="2020 – 2026" label="Timeline" />
                 </div>
               </motion.div>
             </motion.div>
