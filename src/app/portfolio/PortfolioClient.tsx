@@ -55,7 +55,7 @@ export default function PortfolioPage() {
       description:
         "A professional POS system designed to streamline retail operations and enhance customer experience.",
       tags: ["Node.js", "React.js", "Supabase"],
-      year: "2023",
+      year: "2026",
       image:
         "/DutyFree.jpeg",
     },
