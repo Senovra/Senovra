@@ -6,9 +6,10 @@ import PageTransition from "@/components/PageTransition";
 import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import { Sparkles, MapPin, Calendar, Code2 } from "lucide-react";
 import { useRef, useState } from "react";
+import Image from "next/image";
 
 /* ─────────────────────────────────────────────────────────────
-   Tilt Card — subtle 3-D perspective on mouse move
+   Tilt Card
 ───────────────────────────────────────────────────────────── */
 function TiltCard({
   children,
@@ -56,22 +57,20 @@ function TiltCard({
 }
 
 /* ─────────────────────────────────────────────────────────────
-   Year Stamp — animated on card hover
+   Year Stamp
 ───────────────────────────────────────────────────────────── */
 function YearStamp({ year }: { year: string }) {
   return (
     <div className="absolute top-4 right-4 z-10">
       <motion.div
         className="relative flex items-center gap-1.5 px-2.5 py-1 rounded-full
-          bg-black/40 border border-white/[0.08] backdrop-blur-md
-          overflow-hidden"
+          bg-black/40 border border-white/[0.08] backdrop-blur-md overflow-hidden"
       >
         <motion.div
           className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent"
           whileHover={{ translateX: "200%" }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
         />
-        {/* FIXED: cyan like all other Calendar icons */}
         <Calendar size={9} className="text-[#7dd3fc] relative z-10" />
         <span className="text-[10px] text-[#7dd3fc] relative z-10 tabular-nums tracking-wider">
           {year}
@@ -103,17 +102,17 @@ function TagChip({ label, index }: { label: string; index: number }) {
 }
 
 /* ─────────────────────────────────────────────────────────────
-   Collection Stat — refined number + label
+   Collection Stat
 ───────────────────────────────────────────────────────────── */
 function CollectionStat({ value, label }: { value: string; label: string }) {
   return (
     <div className="flex flex-col items-center gap-1.5 px-6 first:pl-0 last:pr-0">
       <span
         className="text-2xl bg-gradient-to-r from-[#7dd3fc] to-[#a78bfa] bg-clip-text text-transparent"
-        style={{ 
+        style={{
           fontFamily: "'Georgia', 'Times New Roman', serif",
           fontWeight: 300,
-          letterSpacing: '-0.02em',
+          letterSpacing: "-0.02em",
           fontVariantNumeric: "tabular-nums",
         }}
       >
@@ -125,6 +124,7 @@ function CollectionStat({ value, label }: { value: string; label: string }) {
     </div>
   );
 }
+
 /* ─────────────────────────────────────────────────────────────
    Main Page
 ───────────────────────────────────────────────────────────── */
@@ -214,7 +214,7 @@ export default function PortfolioClient() {
               </motion.div>
             </div>
 
-            {/* ── Senovra Collection — interactive spotlight card ── */}
+            {/* ── Senovra Collection card ── */}
             <motion.div
               onMouseMove={handleCollectionMouse}
               onMouseEnter={() => setCollectionHovered(true)}
@@ -226,10 +226,8 @@ export default function PortfolioClient() {
                 bg-white/[0.03] border border-white/[0.08] backdrop-blur-md
                 overflow-hidden cursor-default"
             >
-              {/* Top cyan line */}
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#7dd3fc] to-transparent opacity-70" />
 
-              {/* Mouse-follow spotlight */}
               <motion.div
                 className="absolute inset-0 pointer-events-none"
                 style={{
@@ -243,7 +241,6 @@ export default function PortfolioClient() {
                 }}
               />
 
-              {/* Border glow on hover */}
               <motion.div
                 className="absolute inset-0 rounded-2xl pointer-events-none border border-[#7dd3fc]/0 transition-all duration-500"
                 animate={{
@@ -253,33 +250,23 @@ export default function PortfolioClient() {
                 }}
               />
 
-              {/* Sparkles icon — spins slowly on hover */}
               <motion.div
                 animate={{ rotate: collectionHovered ? 180 : 0 }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 className="inline-block mb-4"
               >
-                <Sparkles
-                  className="text-[#7dd3fc] mx-auto"
-                  size={28}
-                  strokeWidth={1}
-                />
+                <Sparkles className="text-[#7dd3fc] mx-auto" size={28} strokeWidth={1} />
               </motion.div>
 
-              {/* UNCHANGED text */}
               <h2 className="font-medium text-white mb-3 text-[clamp(22px,2.5vw,34px)] leading-tight">
                 The{" "}
-                <span className="gradient-text font-medium">
-                  Senovra Collection
-                </span>
+                <span className="gradient-text font-medium">Senovra Collection</span>
               </h2>
 
               <p className="text-[#a1a1aa] text-base max-w-xl mx-auto font-light leading-relaxed">
-                High-performance digital experiences built for ambitious brands
-                and businesses.
+                High-performance digital experiences built for ambitious brands and businesses.
               </p>
 
-              {/* Stats row — refined, fades in on hover */}
               <motion.div
                 initial={false}
                 animate={{
@@ -290,9 +277,9 @@ export default function PortfolioClient() {
                 className="mt-8 pt-6 border-t border-white/[0.06]"
               >
                 <div className="flex items-center justify-center divide-x divide-white/[0.06]">
-                  <CollectionStat value="100%" label="Client Satisfaction" />
+                  <CollectionStat value="5" label="Deliveries" />
                   <CollectionStat value="4+" label="Industries" />
-                  <CollectionStat value="2020 – 2026" label="Timeline" />
+                  <CollectionStat value="2022 – 2026" label="Timeline" />
                 </div>
               </motion.div>
             </motion.div>
@@ -315,15 +302,17 @@ export default function PortfolioClient() {
             >
               <div className="grid lg:grid-cols-2 gap-0">
 
-                {/* Image — UNCHANGED */}
+                {/* Image */}
                 <div className="relative overflow-hidden min-h-[400px] bg-[#05070d] flex items-center justify-center p-6">
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_top_right,rgba(125,211,252,0.08),transparent_60%)]" />
-                  <img
-                    src="/GIH.png"
-                    alt="GIH"
-                    className="relative z-10 w-full h-full object-contain transition-transform duration-1000 group-hover:scale-[1.03]"
-                    style={{ maxHeight: "400px" }}
-                  />
+                  <div className="relative z-10 w-full h-full" style={{ maxHeight: "400px" }}>
+                    <Image
+                      src="/GIH.png"
+                      alt="GIH"
+                      fill
+                      className="object-contain transition-transform duration-1000 group-hover:scale-[1.03]"
+                    />
+                  </div>
                   <div className="absolute top-6 left-6 z-20">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#7dd3fc]/10 border border-[#7dd3fc]/20 backdrop-blur-xl">
                       <div className="w-2 h-2 rounded-full bg-[#7dd3fc] animate-pulse" />
@@ -334,7 +323,7 @@ export default function PortfolioClient() {
                   </div>
                 </div>
 
-                {/* Content — UNCHANGED except Calendar icon color fixed */}
+                {/* Content */}
                 <div className="p-8 md:p-12 flex flex-col justify-center">
                   <span className="text-[#7dd3fc] text-sm uppercase tracking-wider mb-3">
                     Luxury Hospitality Platform
@@ -346,7 +335,6 @@ export default function PortfolioClient() {
                       <MapPin size={11} />
                       Maldives Hospitality
                     </span>
-                    {/* FIXED: Calendar icon now blue like MapPin */}
                     <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full bg-[#7dd3fc]/[0.06] border border-[#7dd3fc]/20 text-[#7dd3fc]">
                       <Calendar size={11} />
                       2026
@@ -354,7 +342,7 @@ export default function PortfolioClient() {
                   </div>
 
                   <p className="text-[#a1a1aa] text-lg leading-relaxed mb-8">
-                    Senovra's flagship hospitality platform, designed for the
+                    Senovra&apos;s flagship hospitality platform, designed for the
                     Maldives luxury resort sector. GIH combines premium visual
                     storytelling, resort discovery and investment-focused
                     experiences within a high-performance modern web platform.
@@ -414,24 +402,22 @@ export default function PortfolioClient() {
                       hover:shadow-[0_8px_40px_rgba(125,211,252,0.08)]
                       cursor-default h-full"
                   >
-                    {/* Radial glow */}
                     <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none bg-[radial-gradient(circle_at_top_right,rgba(125,211,252,0.07),transparent_65%)]" />
 
-                    {/* ── Screenshot ── */}
+                    {/* Screenshot */}
                     <div
                       className="relative w-full bg-[#05070d] flex items-center justify-center overflow-hidden flex-shrink-0"
                       style={{ height: "260px" }}
                     >
-                      <img
+                      <Image
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-[1.03]"
+                        fill
+                        className="object-contain p-4 transition-transform duration-700 group-hover:scale-[1.03]"
                       />
 
-                      {/* Year stamp — FIXED: now cyan */}
                       <YearStamp year={project.year} />
 
-                      {/* Category pill */}
                       <div className="absolute bottom-4 left-4 z-10">
                         <motion.span
                           initial={{ opacity: 0, x: -6 }}
@@ -447,13 +433,11 @@ export default function PortfolioClient() {
                         </motion.span>
                       </div>
 
-                      {/* Bottom fade */}
                       <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#070B14] to-transparent" />
                     </div>
 
-                    {/* ── Body ── */}
+                    {/* Body */}
                     <div className="relative z-10 flex flex-col flex-1 p-6">
-
                       <h3 className="text-2xl md:text-3xl font-medium text-white mb-3 leading-tight">
                         {project.title}
                       </h3>
