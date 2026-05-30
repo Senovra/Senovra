@@ -76,8 +76,8 @@ export default function AboutPage() {
   ];
 
   const stats = [
-    { value: 20, suffix: "+", label: "Projects Delivered" },
-    { value: 15, suffix: "+", label: "Global Clients" },
+    { value: 30, suffix: "+", label: "Projects Delivered" },
+    { value: 20, suffix: "+", label: "Global Clients" },
     { value: 6, suffix: "+", label: "Years of Craft" },
     { value: 100, suffix: "%", label: "Client Satisfaction" },
   ];
