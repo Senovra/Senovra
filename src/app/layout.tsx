@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
 import LoadingScreen from "@/components/LoadingScreen";
 import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
@@ -25,7 +24,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" style={{ colorScheme: "dark" }}>
+      <head>
+        {/*
+          Prevents Samsung Browser and other aggressive browser dark mode
+          engines from re-processing colors on an already-dark site.
+          Must be in <head> to take effect before first paint.
+        */}
+        <meta name="color-scheme" content="dark" />
+        <meta name="theme-color" content="#070B14" />
+      </head>
       <body>
         <MouseGradient />
         <LoadingScreen />
