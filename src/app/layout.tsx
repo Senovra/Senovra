@@ -16,6 +16,23 @@ export const metadata: Metadata = {
   icons: {
     icon: "/logo3.png",
   },
+
+  openGraph: {
+    title: "Senovra",
+    description:
+      "High-performance web development and maintenance for ambitious businesses. Fast, scalable, modern websites engineered for results.",
+    url: "https://senovra.com",
+    siteName: "Senovra",
+    images: [
+      {
+        url: "/GIH.png",
+        width: 1200,
+        height: 630,
+        alt: "Senovra Preview",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -26,11 +43,6 @@ export default function RootLayout({
   return (
     <html lang="en" style={{ colorScheme: "dark" }}>
       <head>
-        {/*
-          Prevents Samsung Browser and other aggressive browser dark mode
-          engines from re-processing colors on an already-dark site.
-          Must be in <head> to take effect before first paint.
-        */}
         <meta name="color-scheme" content="dark" />
         <meta name="theme-color" content="#070B14" />
       </head>
