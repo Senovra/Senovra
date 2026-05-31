@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 export default function FeaturedWork() {
   const projects = [
@@ -12,21 +13,19 @@ export default function FeaturedWork() {
         "A luxury hospitality platform concept designed to showcase resort listings and investment opportunities through a clean, modern interface.",
       image: "/GIH.png",
     },
-   {
+    {
       title: "DutyFree",
       category: "Professional POS System",
       description:
         "A modern retail and point-of-sale platform tailored for Maldives duty-free operations.",
-      image:
-        "/DutyFree.jpeg",
+      image: "/DutyFree.jpeg",
     },
     {
       title: "Salon Zen",
       category: "Salon Management & Booking Platform",
       description:
         "A comprehensive platform for managing salon operations and client bookings.",
-      image:
-        "/SalonZen.png",
+      image: "/SalonZen.png",
     },
   ];
 
@@ -52,7 +51,7 @@ export default function FeaturedWork() {
           </div>
 
           {/* VIEW ALL BUTTON - Desktop only */}
-          <a
+          
             href="/portfolio"
             className="hidden md:flex items-center gap-2 px-6 py-3 rounded-full text-sm font-light text-white
             bg-white/[0.03] border border-white/[0.08]
@@ -83,13 +82,14 @@ export default function FeaturedWork() {
               className="premium-card bg-[#070B14] p-6 md:p-8 lg:p-12 flex flex-col md:flex-row items-start gap-6 md:gap-8 group cursor-pointer block"
             >
               {/* Project Image */}
-              <div className="w-full md:w-1/3 h-48 md:h-32 relative overflow-hidden rounded-lg">
-                <img
+              <div className="w-full md:w-1/3 h-48 md:h-36 relative overflow-hidden rounded-lg bg-[#05070d] flex-shrink-0">
+                <Image
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  fill
+                  className="object-contain transition-transform duration-700 group-hover:scale-105 p-2"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#070B14] via-transparent to-transparent opacity-40" />
               </div>
 
               {/* Project Info */}
@@ -121,7 +121,7 @@ export default function FeaturedWork() {
           viewport={{ once: true }}
           className="md:hidden mt-8 text-center"
         >
-          <a
+          
             href="/portfolio"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-sm font-light text-white
             bg-white/[0.03] border border-white/[0.08]
