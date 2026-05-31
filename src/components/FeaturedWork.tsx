@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FeaturedWork() {
   const projects = [
@@ -51,19 +52,18 @@ export default function FeaturedWork() {
             </p>
           </div>
 
-          {/* VIEW ALL BUTTON - Desktop only */}
-          
-            href="/portfolio"
-            className="hidden md:flex items-center gap-2 px-6 py-3 rounded-full text-sm font-light text-white
-            bg-white/[0.03] border border-white/[0.08]
-            backdrop-blur-md
-            hover:bg-white/[0.06]
-            hover:border-white/[0.15]
-            transition-all duration-300 group whitespace-nowrap"
-          >
-            View All
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-          </a>
+         <Link
+  href="/portfolio"
+  className="hidden md:flex items-center gap-2 px-6 py-3 rounded-full text-sm font-light text-white
+  bg-white/[0.03] border border-white/[0.08]
+  backdrop-blur-md
+  hover:bg-white/[0.06]
+  hover:border-white/[0.15]
+  transition-all duration-300 group whitespace-nowrap"
+>
+  View All
+  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+</Link>
         </motion.div>
 
         {/* Projects List */}
@@ -81,9 +81,10 @@ export default function FeaturedWork() {
               viewport={{ once: true }}
             >
               
-                href="/portfolio"
-                className="premium-card bg-[#070B14] p-6 md:p-8 lg:p-12 flex flex-col md:flex-row items-start gap-6 md:gap-8 group cursor-pointer block"
-              >
+               <Link
+  href="/portfolio"
+  className="premium-card bg-[#070B14] p-6 md:p-8 lg:p-12 flex flex-col md:flex-row items-start gap-6 md:gap-8 group cursor-pointer block"
+>
                 {/* Project Image */}
                 <div className="w-full md:w-1/3 h-48 md:h-36 relative overflow-hidden rounded-lg bg-[#05070d] flex-shrink-0">
                   <Image
@@ -112,7 +113,7 @@ export default function FeaturedWork() {
                 <div className="hidden md:block ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <ArrowUpRight className="w-5 h-5 text-[#a1a1aa]" />
                 </div>
-              </a>
+              </Link>
             </motion.div>
           ))}
         </div>
@@ -125,18 +126,18 @@ export default function FeaturedWork() {
           viewport={{ once: true }}
           className="md:hidden mt-8 text-center"
         >
-          
-            href="/portfolio"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-sm font-light text-white
-            bg-white/[0.03] border border-white/[0.08]
-            backdrop-blur-md
-            hover:bg-white/[0.06]
-            hover:border-white/[0.15]
-            transition-all duration-300 group"
-          >
+<Link
+  href="/portfolio"
+  className="inline-flex items-center gap-2 px-8 py-4 rounded-full text-sm font-light text-white
+  bg-white/[0.03] border border-white/[0.08]
+  backdrop-blur-md
+  hover:bg-white/[0.06]
+  hover:border-white/[0.15]
+  transition-all duration-300 group"
+>
             View All Projects
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-          </a>
+         </Link>
         </motion.div>
 
       </div>
