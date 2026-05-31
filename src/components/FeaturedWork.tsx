@@ -12,13 +12,13 @@ export default function FeaturedWork() {
         "A luxury hospitality platform concept designed to showcase resort listings and investment opportunities through a clean, modern interface.",
       image: "/GIH.png",
     },
-    {
-      title: "EatSafe",
-      category: "Diet Recommendation Platform",
+   {
+      title: "DutyFree",
+      category: "Professional POS System",
       description:
-        "An AI-powered web application that provides personalized diet recommendations based on health metrics and user preferences.",
+        "A modern retail and point-of-sale platform tailored for Maldives duty-free operations.",
       image:
-        "/EatSafe.png",
+        "/DutyFree.jpeg",
     },
     {
       title: "Salon Zen",
