@@ -254,3 +254,82 @@ input:-webkit-autofill:active {
   box-shadow: none !important;
   background-color: transparent !important;
 }
+
+/* ─────────────────────────────────────────────────────────────
+   SAMSUNG BROWSER DARK MODE FORCED OVERRIDE
+   Samsung Browser ignores color-scheme declarations and applies
+   its own dark filter even on already-dark sites. The only
+   reliable fix is to explicitly declare every color using
+   forced-color-adjust and re-declare text colors so Samsung's
+   filter has nothing to reprocess.
+───────────────────────────────────────────────────────────── */
+
+/* 
+  Disable Samsung Browser's forced color adjustment entirely.
+  This is the nuclear option — tells the browser engine to
+  never override author-specified colors on any element.
+*/
+*,
+*::before,
+*::after {
+  forced-color-adjust: none;
+  -webkit-forced-color-adjust: none;
+}
+
+/*
+  Samsung Browser dark mode works by injecting a CSS filter
+  on the root. This explicitly cancels any filter that
+  Samsung or any browser dark mode engine applies.
+*/
+html {
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+/*
+  Re-declare all text colors explicitly so Samsung Browser
+  has no "uncolored" text to darken.
+  Samsung only darkens text that appears white/light without
+  an explicit color declaration it recognises.
+*/
+body,
+body * {
+  color: inherit;
+}
+
+body {
+  color: #ffffff !important;
+  background-color: #070B14 !important;
+}
+
+/* Re-assert muted text explicitly */
+p,
+span,
+li,
+td,
+th,
+label,
+blockquote {
+  -webkit-text-fill-color: unset !important;
+}
+
+/*
+  Samsung Browser's dark mode targets elements where it
+  detects a light background. Explicitly mark every
+  surface as dark so it skips them.
+*/
+@media screen {
+  html,
+  body,
+  main,
+  section,
+  div,
+  header,
+  footer,
+  nav,
+  article,
+  aside {
+    background-color: transparent;
+    color-scheme: dark;
+  }
+}
