@@ -32,6 +32,7 @@ export default function FeaturedWork() {
   return (
     <section className="py-16 md:py-24 lg:section-spacing px-4 md:px-6 relative">
       <div className="max-w-7xl mx-auto">
+
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -68,9 +69,8 @@ export default function FeaturedWork() {
         {/* Projects List */}
         <div className="space-y-px bg-white/[0.02]">
           {projects.map((project, index) => (
-            <motion.a
+            <motion.div
               key={index}
-              href="/portfolio"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -79,37 +79,41 @@ export default function FeaturedWork() {
                 ease: [0.22, 1, 0.36, 1],
               }}
               viewport={{ once: true }}
-              className="premium-card bg-[#070B14] p-6 md:p-8 lg:p-12 flex flex-col md:flex-row items-start gap-6 md:gap-8 group cursor-pointer block"
             >
-              {/* Project Image */}
-              <div className="w-full md:w-1/3 h-48 md:h-36 relative overflow-hidden rounded-lg bg-[#05070d] flex-shrink-0">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-contain transition-transform duration-700 group-hover:scale-105 p-2"
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-              </div>
-
-              {/* Project Info */}
-              <div className="flex-1">
-                <div className="text-xs md:text-sm text-[#a1a1aa] mb-2 font-light">
-                  {project.category}
+              
+                href="/portfolio"
+                className="premium-card bg-[#070B14] p-6 md:p-8 lg:p-12 flex flex-col md:flex-row items-start gap-6 md:gap-8 group cursor-pointer block"
+              >
+                {/* Project Image */}
+                <div className="w-full md:w-1/3 h-48 md:h-36 relative overflow-hidden rounded-lg bg-[#05070d] flex-shrink-0">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-contain transition-transform duration-700 group-hover:scale-105 p-2"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
                 </div>
-                <h3 className="text-xl md:text-2xl lg:text-3xl font-medium mb-2 md:mb-3">
-                  {project.title}
-                </h3>
-                <p className="text-[#a1a1aa] text-sm md:text-base font-light leading-relaxed max-w-2xl">
-                  {project.description}
-                </p>
-              </div>
 
-              {/* Arrow Icon - Hidden on mobile */}
-              <div className="hidden md:block ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <ArrowUpRight className="w-5 h-5 text-[#a1a1aa]" />
-              </div>
-            </motion.a>
+                {/* Project Info */}
+                <div className="flex-1">
+                  <div className="text-xs md:text-sm text-[#a1a1aa] mb-2 font-light">
+                    {project.category}
+                  </div>
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-medium mb-2 md:mb-3">
+                    {project.title}
+                  </h3>
+                  <p className="text-[#a1a1aa] text-sm md:text-base font-light leading-relaxed max-w-2xl">
+                    {project.description}
+                  </p>
+                </div>
+
+                {/* Arrow Icon - Hidden on mobile */}
+                <div className="hidden md:block ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <ArrowUpRight className="w-5 h-5 text-[#a1a1aa]" />
+                </div>
+              </a>
+            </motion.div>
           ))}
         </div>
 
@@ -134,6 +138,7 @@ export default function FeaturedWork() {
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
           </a>
         </motion.div>
+
       </div>
     </section>
   );
