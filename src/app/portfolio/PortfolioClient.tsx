@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import { Sparkles, MapPin, Calendar, Code2, CheckCircle2, Clock, Wrench } from "lucide-react";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, type ReactNode } from "react";
 
 
 /* ─────────────────────────────────────────────────────────────
@@ -35,7 +35,7 @@ const statusConfig: Record<
     color: string;
     bg: string;
     border: string;
-    icon: ReactNode;
+    icon: React.ReactNode;
   }
 > = {
   completed: {
