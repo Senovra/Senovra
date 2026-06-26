@@ -440,7 +440,7 @@ const spotlightBackground = useTransform(
           </motion.div>
         </section>
 
-        {/* ── GIH Flagship ─────────────────────────────────────────── */}
+        {/* ── GIARA INVESTMENT HOLDINGS (GIH) Flagship ─────────────────────────────────────────── */}
         <section className="px-4 md:px-6 pb-20">
           <div className="max-w-7xl mx-auto">
             <motion.div
@@ -492,14 +492,14 @@ const spotlightBackground = useTransform(
                   </motion.span>
 
                   <motion.h2
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.15 }}
-                    className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium mb-3 lg:mb-4"
-                  >
-                    GIARA Investment Holdings
-                  </motion.h2>
+  initial={{ opacity: 0, y: 10 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.5, delay: 0.15 }}
+  className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-3 lg:mb-4"
+>
+  GIARA Investment Holdings
+</motion.h2>
 
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
@@ -509,9 +509,9 @@ const spotlightBackground = useTransform(
                     className="flex flex-wrap gap-2 mb-4 lg:mb-6"
                   >
                     <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full bg-[#7dd3fc]/[0.06] border border-[#7dd3fc]/20 text-[#7dd3fc]">
-                      <MapPin size={11} />
-                      UAE Investments
-                    </span>
+  <MapPin size={11} />
+  Dubai Investments
+</span>
                     <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full bg-[#7dd3fc]/[0.06] border border-[#7dd3fc]/20 text-[#7dd3fc]">
                       <Calendar size={11} />
                       2026
