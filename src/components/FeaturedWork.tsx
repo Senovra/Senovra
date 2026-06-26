@@ -8,10 +8,10 @@ import Link from "next/link";
 export default function FeaturedWork() {
   const projects = [
     {
-      title: "GIH",
-      category: "Luxury Hospitality Platform",
+      title: "GIARA Investment Holdings",
+      category: "Premium Investment Holdings",
       description:
-        "A luxury hospitality platform concept designed to showcase resort listings and investment opportunities through a clean, modern interface.",
+        "A luxury real estate investment platform designed to showcase premium hotels, apartments and property holdings through a refined, modern interface.",
       image: "/GIH.png",
     },
     {
