@@ -488,7 +488,7 @@ const spotlightBackground = useTransform(
                     transition={{ duration: 0.5, delay: 0.1 }}
                     className="text-[#7dd3fc] text-xs lg:text-sm uppercase tracking-wider mb-2 lg:mb-3 block"
                   >
-                    Luxury Hospitality Platform
+                    Luxury Real Estate Investment Platform
                   </motion.span>
 
                   <motion.h2
@@ -498,7 +498,7 @@ const spotlightBackground = useTransform(
                     transition={{ duration: 0.5, delay: 0.15 }}
                     className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-medium mb-3 lg:mb-4"
                   >
-                    GIH
+                    GIARA Investment Holdings
                   </motion.h2>
 
                   <motion.div
@@ -510,7 +510,7 @@ const spotlightBackground = useTransform(
                   >
                     <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full bg-[#7dd3fc]/[0.06] border border-[#7dd3fc]/20 text-[#7dd3fc]">
                       <MapPin size={11} />
-                      Maldives Hospitality
+                      UAE Investments
                     </span>
                     <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full bg-[#7dd3fc]/[0.06] border border-[#7dd3fc]/20 text-[#7dd3fc]">
                       <Calendar size={11} />
@@ -527,10 +527,7 @@ const spotlightBackground = useTransform(
                     transition={{ duration: 0.5, delay: 0.25 }}
                     className="text-[#a1a1aa] text-base lg:text-lg leading-relaxed mb-6 lg:mb-8"
                   >
-                    Senovra&apos;s flagship hospitality platform, designed for the
-                    Maldives luxury resort sector. GIH combines premium visual
-                    storytelling, resort discovery and investment-focused
-                    experiences within a high-performance modern web platform.
+                    Senovra&apos;s flagship corporate platform, created for GIARA Investment Holdings. Designed to reflect a premium investment brand, the website combines elegant visual storytelling, refined user experiences and modern web technologies to showcase high-value real estate assets, strategic investments and the company&apos;s international presence.
                   </motion.p>
 
                   <motion.div
