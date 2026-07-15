@@ -300,7 +300,7 @@ const spotlightBackground = useTransform(
       status: "completed",
     },
     {
-      title: "DutyFree",
+      title: "Duty Free Store",
       category: "Professional POS System",
       description:
         "A modern retail and point-of-sale platform tailored for Maldives duty-free operations, built to streamline transactions, inventory management and customer experiences at scale.",
