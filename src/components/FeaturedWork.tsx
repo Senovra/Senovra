@@ -12,7 +12,7 @@ export default function FeaturedWork() {
       category: "Luxury Real Estate Investment Platform",
       description:
         "A luxury real estate investment platform designed to showcase premium hotels, apartments and property holdings through a refined, modern interface.",
-      image: "/GIH.png",
+      image: "/GIARA.png",
     },
     {
       title: "DutyFree",
