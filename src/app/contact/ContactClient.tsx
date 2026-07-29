@@ -173,7 +173,7 @@ ${message}
                     </h3>
                   </div>
                   <p className="text-sm text-[#a1a1aa] leading-relaxed font-light">
-                    We typically respond within 24 hours during business days with a tailored response.
+                    We typically respond within 24 hours during business days with a tailored solution.
                   </p>
                 </div>
               </div>
