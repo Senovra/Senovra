@@ -440,7 +440,7 @@ const spotlightBackground = useTransform(
           </motion.div>
         </section>
 
-        {/* ── GIARA INVESTMENT HOLDINGS (GIH) Flagship ─────────────────────────────────────────── */}
+        {/* ── GIARA INVESTMENT HOLDINGS Flagship ─────────────────────────────────────────── */}
         <section className="px-4 md:px-6 pb-20">
           <div className="max-w-7xl mx-auto">
             <motion.div
@@ -464,8 +464,8 @@ const spotlightBackground = useTransform(
                   <div className="hidden lg:block absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_top_right,rgba(125,211,252,0.08),transparent_60%)]" />
 
                   <img
-                    src="/GIH.png"
-                    alt="GIH"
+                    src="/GIARA.png"
+                    alt="GIARA"
                     className="relative z-10 w-full h-full object-contain transition-transform duration-1000 group-hover:scale-[1.03]"
                     style={{ maxHeight: "340px" }}
                   />
@@ -498,7 +498,7 @@ const spotlightBackground = useTransform(
   transition={{ duration: 0.5, delay: 0.15 }}
   className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium mb-3 lg:mb-4"
 >
-  GIARA Investment Holdings
+  GIARA Investments
 </motion.h2>
 
                   <motion.div
@@ -516,7 +516,7 @@ const spotlightBackground = useTransform(
                       <Calendar size={11} />
                       2026
                     </span>
-                    {/* GIH status badge */}
+                    {/* GIARA status badge */}
                     <StatusBadge status="in development" />
                   </motion.div>
 
@@ -527,7 +527,7 @@ const spotlightBackground = useTransform(
                     transition={{ duration: 0.5, delay: 0.25 }}
                     className="text-[#a1a1aa] text-base lg:text-lg leading-relaxed mb-6 lg:mb-8"
                   >
-                    Senovra&apos;s flagship corporate platform, created for GIARA Investment Holdings. Designed to reflect a premium investment brand, the website combines elegant visual storytelling, refined user experiences and modern web technologies to showcase high-value real estate assets, strategic investments and the company&apos;s international presence.
+                    Senovra&apos;s flagship corporate platform, created for GIARA Investments. Designed to reflect a premium investment brand, the website combines elegant visual storytelling, refined user experiences and modern web technologies to showcase high-value real estate assets, strategic investments and the company&apos;s international presence.
                   </motion.p>
 
                   <motion.div
