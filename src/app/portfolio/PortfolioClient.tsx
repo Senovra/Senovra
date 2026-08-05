@@ -432,7 +432,7 @@ const spotlightBackground = useTransform(
               >
                 <div className="flex flex-col md:flex-row items-center justify-center divide-y md:divide-y-0 md:divide-x divide-white/[0.06]">
                   <CollectionStat value="100%" label="Client Satisfaction" />
-                  <CollectionStat value="4+" label="Industries" />
+                  <CollectionStat value="10+" label="Industries" />
                   <CollectionStat value="2020 – 2026" label="Timeline" />
                 </div>
               </motion.div>
@@ -488,7 +488,7 @@ const spotlightBackground = useTransform(
                     transition={{ duration: 0.5, delay: 0.1 }}
                     className="text-[#7dd3fc] text-xs lg:text-sm uppercase tracking-wider mb-2 lg:mb-3 block"
                   >
-                    Luxury Real Estate Investment Platform
+                    Luxury Real Estate & Hospitality Investment Platform
                   </motion.span>
 
                   <motion.h2
@@ -527,7 +527,7 @@ const spotlightBackground = useTransform(
                     transition={{ duration: 0.5, delay: 0.25 }}
                     className="text-[#a1a1aa] text-base lg:text-lg leading-relaxed mb-6 lg:mb-8"
                   >
-                    Senovra&apos;s flagship corporate platform, created for GIARA Investments. Designed to reflect a premium investment brand, the website combines elegant visual storytelling, refined user experiences and modern web technologies to showcase high-value real estate assets, strategic investments and the company&apos;s international presence.
+                    Senovra&apos;s flagship corporate platform, developed for GIARA Investments, a global investment and hospitality company with operations across Dubai, the Maldives and Colombo.
                   </motion.p>
 
                   <motion.div
