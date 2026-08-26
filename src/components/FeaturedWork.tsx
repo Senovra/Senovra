@@ -11,7 +11,7 @@ export default function FeaturedWork() {
       title: "GIARA Investments",
       category: "Luxury Real Estate Investment Platform",
       description:
-        "A luxury real estate investment platform designed to showcase premium hotels, apartments and property holdings through a refined, modern interface.",
+        "A restrained, editorial corporate platform built for GIARA, a Dubai-headquartered investment firm with hospitality projects in Colombo and the Maldives.",
       image: "/GIARA.png",
     },
     {
