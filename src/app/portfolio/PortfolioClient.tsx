@@ -527,7 +527,7 @@ const spotlightBackground = useTransform(
                     transition={{ duration: 0.5, delay: 0.25 }}
                     className="text-[#a1a1aa] text-base lg:text-lg leading-relaxed mb-6 lg:mb-8"
                   >
-                    Senovra&apos;s flagship corporate platform, developed for GIARA Investments, a global investment and hospitality company with operations across Dubai, the Maldives and Colombo.
+                   Senovra designed and built the corporate platform for GIARA, an investment firm headquartered in Dubai specializing in hospitality investments, with active projects in Colombo and the Maldives. The site pairs a restrained, editorial visual language with a fully custom Next.js build — from video-led project pages to a bespoke content structure tailored entirely to GIARA's portfolio.
                   </motion.p>
 
                   <motion.div
