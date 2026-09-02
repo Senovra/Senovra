@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 // route, not just the homepage. Flip back to false to restore normal
 // operation. Requires a commit + push + rebuild to take effect (this is
 // a static/build-time check, not a live toggle).
-const MAINTENANCE_MODE = true;
+const MAINTENANCE_MODE = false;
 
 export default function RootLayout({
   children,
