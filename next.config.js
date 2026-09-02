@@ -3,6 +3,7 @@ const nextConfig = {
   output: 'export',
   distDir: 'root',
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -11,5 +12,4 @@ const nextConfig = {
     ],
   },
 };
-
 module.exports = nextConfig;

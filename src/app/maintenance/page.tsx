@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { Wrench } from "lucide-react";
 
 export default function MaintenancePage() {

@@ -5,6 +5,7 @@ import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
 import MouseGradient from "@/components/MouseGradient";
 import ScrollToTop from "@/components/ScrollToTop";
+import MaintenancePage from "@/app/maintenance/page";
 
 export const metadata: Metadata = {
   title: {
@@ -41,6 +42,12 @@ export const metadata: Metadata = {
   },
 };
 
+// Flip to true to take the ENTIRE site into maintenance mode — every
+// route, not just the homepage. Flip back to false to restore normal
+// operation. Requires a commit + push + rebuild to take effect (this is
+// a static/build-time check, not a live toggle).
+const MAINTENANCE_MODE = true;
+
 export default function RootLayout({
   children,
 }: {
@@ -52,7 +59,6 @@ export default function RootLayout({
         <meta name="color-scheme" content="dark" />
         <meta name="theme-color" content="#070B14" />
 
-        {/* Open Graph — explicit tags for WhatsApp, iMessage, Telegram, Discord */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://senovra.com" />
         <meta property="og:site_name" content="Senovra" />
@@ -66,7 +72,6 @@ export default function RootLayout({
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Senovra" />
 
-        {/* Twitter / X */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://senovra.com" />
         <meta name="twitter:title" content="Senovra" />
@@ -77,12 +82,21 @@ export default function RootLayout({
         <meta name="twitter:image" content="https://senovra.com/logo3.png" />
       </head>
       <body>
-        <MouseGradient />
-        <LoadingScreen />
-        <CustomCursor />
-        <ScrollProgress />
-        <ScrollToTop />
-        {children}
+        {MAINTENANCE_MODE ? (
+          // No chrome (loading screen, cursor, scroll progress, etc.)
+          // around the maintenance page — it's fully self-contained,
+          // same principle applied on the GIARA site.
+          <MaintenancePage />
+        ) : (
+          <>
+            <MouseGradient />
+            <LoadingScreen />
+            <CustomCursor />
+            <ScrollProgress />
+            <ScrollToTop />
+            {children}
+          </>
+        )}
       </body>
     </html>
   );
