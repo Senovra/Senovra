@@ -282,6 +282,17 @@ const spotlightBackground = useTransform(
       location: "Bangladesh Media",
     },
     {
+      title: "Duty Free Store",
+      category: "Professional POS System",
+      description:
+        "A modern retail and point-of-sale platform tailored for Maldives duty-free operations, built to streamline transactions, inventory management and customer experiences at scale.",
+      tags: ["Node.js", "React.js", "Supabase"],
+      year: "2026",
+      image: "/DutyFree.jpeg",
+      status: "maintenance",
+      location: "Maldives Retail",
+    },
+    {
       title: "EatSafe",
       category: "Diet Recommendation Platform",
       description:
@@ -311,17 +322,7 @@ const spotlightBackground = useTransform(
       image: "/SafeSure.png",
       status: "completed",
     },
-    {
-      title: "Duty Free Store",
-      category: "Professional POS System",
-      description:
-        "A modern retail and point-of-sale platform tailored for Maldives duty-free operations, built to streamline transactions, inventory management and customer experiences at scale.",
-      tags: ["Node.js", "React.js", "Supabase"],
-      year: "2026",
-      image: "/DutyFree.jpeg",
-      status: "maintenance",
-      location: "Maldives Retail",
-    },
+    
   ];
 
   return (
