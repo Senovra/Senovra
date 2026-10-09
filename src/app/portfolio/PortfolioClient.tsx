@@ -269,6 +269,18 @@ const spotlightBackground = useTransform(
     status: StatusType;
     location?: string;
   }[] = [
+    
+    {
+      title: "Offscript",
+      category: "Digital Media Agency",
+      description:
+        "A custom-built website for Offscript, a digital media agency operating across Bangladesh and Sri Lanka, showcasing its services, creative capabilities and brand identity.",
+      tags: ["Next.js", "React.js", "TypeScript"],
+      year: "2026",
+      image: "/Offscript.png",
+      status: "in development",
+      location: "Bangladesh Media",
+    },
     {
       title: "EatSafe",
       category: "Diet Recommendation Platform",
