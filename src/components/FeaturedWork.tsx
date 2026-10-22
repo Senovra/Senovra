@@ -15,19 +15,20 @@ export default function FeaturedWork() {
       image: "/GIARA.png",
     },
     {
-      title: "DutyFree",
+      title: "Offscript",
+      category: "Digital Media Agency",
+      description:
+        "A custom-built website for Offscript, a digital media agency operating across Bangladesh and Sri Lanka",
+      image: "/Offscript.png",
+    },
+    {
+      title: "Duty Free Store",
       category: "Professional POS System",
       description:
         "A modern retail and point-of-sale platform tailored for Maldives duty-free operations.",
       image: "/DutyFree.jpeg",
     },
-    {
-      title: "Salon Zen",
-      category: "Salon Management & Booking Platform",
-      description:
-        "A comprehensive platform for managing salon operations and client bookings.",
-      image: "/SalonZen.png",
-    },
+    
   ];
 
   return (
