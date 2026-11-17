@@ -278,7 +278,7 @@ const spotlightBackground = useTransform(
       tags: ["Next.js", "React.js", "TypeScript"],
       year: "2026",
       image: "/Offscript.png",
-      status: "in development",
+      status: "completed",
       location: "Bangladesh Media",
     },
     {
